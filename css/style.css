@@ -143,15 +143,15 @@ footer {
 /***********************/
 /*     Information     */
 /***********************/
-.information .container-fluid .row div:first-child {
+.information .xcontainer-fluid .row div:first-child {
   background-color: var(--primary);
 }
 
-.information .container-fluid .row div:last-child {
+.information .xcontainer-fluid .row div:last-child {
   background-color: white;
 }
 
-.information .container-fluid .row div:nth-child(2) {
+.information .xcontainer-fluid .row div:nth-child(2) {
   background-color: var(--primary-light);
 }
 
