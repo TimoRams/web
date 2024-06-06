@@ -1,405 +1,639 @@
 <!DOCTYPE html>
-<html lang="de" data-bs-theme="dark">
-  <head>
-    <script src="./js/color-modes.js"></script>
+<html lang="de" data-bs-theme="auto">
 
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="Willkommen! Ich bin Timo, entdecken Sie meine Projekte hier."
-    />
-    <meta name="author" content="Timo Ramsbrock" />
-    <meta
-      name="google-site-verification"
-      content="ghXshh8OCnv2YMzlWimCrRR4SMMyzoJFKIawGmnqtik"
-    />
-    <!-- Webpage Title -->
-    <title>Ramsbrock.Net · Timo R.</title>
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Ramsbrock.Net - Index</title>
+  <meta content="" name="description" />
+  <meta content="" name="keywords" />
+  <link href="assets/img/favicon.png" rel="icon" />
 
-    <link href="./css/bootstrap.min.css" rel="stylesheet" />
-    <link href="./css/style.css" rel="stylesheet" />
-    <link href="./css/fontawesome-all.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i"
+    rel="stylesheet" />
 
-    <!-- Favicon -->
-    <link rel="icon" href="./assets/images/favicon.png" />
-  </head>
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
-  <body class="home d-flex flex-column h-100">
-    <header>
-      <!-- Fixed navbar -->
-      <!--<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark"></nav>-->
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark custom-navbar">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Ramsbrock.Net</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarCollapse"
-            aria-controls="navbarCollapse"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav me-auto mb-2 mb-md-0">
-              <ul class="nav nav-pills">
-                <li class="nav-item">
-                  <a
-                    class="nav-link active"
-                    id="page1-tab"
-                    data-bs-toggle="tab"
-                    href="#page1"
-                    role="tab"
-                    aria-controls="page1"
-                    aria-selected="true"
-                    >Home</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="nav-link"
-                    id="page2-tab"
-                    data-bs-toggle="tab"
-                    href="#page2"
-                    role="tab"
-                    aria-controls="page2"
-                    aria-selected="false"
-                    >Page 2</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="nav-link"
-                    id="page3-tab"
-                    data-bs-toggle="tab"
-                    href="#page3"
-                    role="tab"
-                    aria-controls="page3"
-                    aria-selected="false"
-                    >Page 3</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="nav-link"
-                    id="page4-tab"
-                    data-bs-toggle="tab"
-                    href="#page4"
-                    role="tab"
-                    aria-controls="page4"
-                    aria-selected="false"
-                    >Page 4</a
-                  >
-                </li>
-                <!-- Weitere Tabs hier hinzufügen -->
-                <li class="nav-item">
-                  <a href="#" class="nav-link">Extra n/a</a>
-                </li>
-              </ul>
+  <!-- Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet" />
+</head>
 
-              <!--Ideas
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-              </li>
-            --></ul>
-            <form class="d-flex" role="search">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button class="btn btn-outline-success" type="submit">
-                Search
-              </button>
-            </form>
+<body>
+
+  <!-- Header -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+      <h1 class="logo me-auto"><a href="index.html">Ramsbrock.Net</a></h1>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li>
+            <a class="nav-link scrollto active" href="#hero">Startseite</a>
+          </li>
+          <li><a class="nav-link scrollto" href="#about">Über</a></li>
+          <li><a class="nav-link scrollto" href="#portfolio">Projekte</a></li>
+          <li><a class="nav-link scrollto" href="#faq">FAQ</a></li>
+          <li><a class="nav-link scrollto" href="#footer">Kontakt</a></li>
+          <li><a class="nav-link" href="projekt.html">Demo(Dev)</a></li>
+          <!-- Spacer temp fix -->
+          <li><a class="nav-link scrollto" href="#">  </a></li>
+          <form class="d-flex" autocomplete="off" role="search" method="GET" action="https://www.google.com/search">
+            <input type="hidden" name="as_sitesearch" value="www.ramsbrock.net" />
+            <input class="form-control me-2" type="search" name="q" placeholder="Suche (WIP)" aria-label="Search" />
+            <button class="getstarted btn btn-outline-success" type="submit">
+              Suchen
+            </button>
+          </form>
+          
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+    </div>
+  </header>
+  <!-- End Header -->
+
+  <!-- Hero Section -->
+  <section id="hero" class="d-flex align-items-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1"
+          data-aos="fade-up" data-aos-delay="200">
+          <h1>Wilkommen auf <span class="home_text">Ramsbrock.Net</span>!</h1>
+          <h2>Webseite von Timo Ramsbrock</h2>
+          <div class="d-flex justify-content-center justify-content-lg-start">
+            <a href="#about" class="btn-get-started scrollto">Let's Go!</a>
+            <a href="https://www.youtube.com/channel/UCT-Ag_P_5x_Z8bTESx7WMPA" class="glightbox btn-watch-video"><i
+                class="bi bi-play-circle"></i><span>Video!</span></a>
           </div>
         </div>
-      </nav>
-    </header>
+        <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
+          <img src="assets/img/delorean.png" class="img-fluid animated" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Hero -->
 
-    <main class="flex-shrink-0">
-      <!-- Main Content -->
-      <div class="container-fluid mt-5">
-        <!-- Tab Content -->
-        <div class="tab-content" id="myTabContent">
-          <div
-            class="tab-pane fade show active"
-            id="page1"
-            role="tabpanel"
-            aria-labelledby="page1-tab"
-          >
-          <section class="home py-5 d-flex align-items-center" id="header">
-            <div class="container text-light py-5" style="padding-left: 10%; padding-right: 10%;">
-              <h1 class="headline text-center">
-                Wilkommen auf <span class="home_text">Ramsbrock.Net</span>
-              </h1>
-              <p class="text-center">
-                Vielen Dank für Ihren Besuch auf meiner/unserer Webseite. Bitte
-                beachten Sie, dass meine/unsere Webseite derzeit unter aktiver
-                Entwicklung steht. Wir arbeiten daran, Ihnen bald ein verbessertes
-                und optimiertes Erlebnis zu bieten. Während dieser Zeit könnten
-                einige Funktionen der Webseite vorübergehend nicht verfügbar oder
-                eingeschränkt sein. Wir entschuldigen uns für eventuelle
-                Unannehmlichkeiten und danken Ihnen für Ihr Verständnis und Ihre
-                Geduld. Mit freundlichen Grüßen, Timo
-              </p>
+  <main id="main">
+    <!-- About Section -->
+    <section id="about" class="about section-bg">
+      <div class="container">
+        <div class="section-title">
+          <h2>Über mich</h2>
+          <p></p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4" data-aos="fade-right">
+            <img src="assets/img/e.png" class="img-fluid" alt="" />
+          </div>
+          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <h3>
+              Hobby-Softwareentwickler &amp; begeistert für DIY-Projekte!
+            </h3>
+            <p class="fst-italic">
+              Hallo Ich bin Timo Ramsbrock, 17 Jahre alt und komme aus
+              Deutschland. Ich bin ein Hobby Software Entwickler und mache
+              gerne DIY Projekte.
+            </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <strong>Geburtstag:</strong> <span>18 Sep 2006</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <strong>Webseite:</strong> <span>www.ramsbrock.net</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <strong>Alter:</strong> <span>17</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <strong>Email:</strong> <span>timo@ramsbrock.net</span>
+                  </li>
+                </ul>
+              </div>
             </div>
-          </section>
+            <p>Interesieren tun mich besonders die RPIs, Arduinos und ESP32. In meiner Freizeit beschäftige ich mich auch mit SDR Funkgeräten wie dem Great Scott Hackrf One/Portapack und dem Flipper Zero</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End About Section -->
 
-            <!-- Information -->
-            <section class="information">
-              <div class="xcontainer-fluid">
-                <div class="row text-light">
-                  <div class="col-lg-4 text-center p-5" data-aos="zoom-in">
-                    <i class="fas fa-clock fa-3x p-2"></i>
-                    <h4 class="py-3">Text 1</h4>
-                    <p class="para-light">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Magnam odit consequatur doloribus natus in suscipit!
-                    </p>
-                  </div>
-                  <div class="col-lg-4 text-center p-5" data-aos="zoom-in">
-                    <i class="fas fa-clock fa-3x p-2"></i>
-                    <h4 class="py-3">Text 2</h4>
-                    <p class="para-light">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Magnam odit consequatur doloribus natus in suscipit!
-                    </p>
-                  </div>
-                  <div
-                    class="col-lg-4 text-center p-5 text-dark"
-                    data-aos="zoom-in"
-                  >
-                    <i class="fas fa-clock fa-3x p-2"></i>
-                    <h4 class="py-3">Text 3</h4>
-                    <p class="para-light">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Magnam odit consequatur doloribus natus in suscipit!
-                    </p>
-                  </div>
+    <!-- Skills Section -->
+    <section id="skills" class="skills section-bg">
+      <div class="container">
+        <div class="section-title">
+          <h2>Skills</h2>
+          <p>
+            In meiner Freizeit als auch schulisch habe ich folgende Sklills
+            erlernt:
+          </p>
+        </div>
+
+        <div class="row skills-content">
+          <div class="col-lg-6" data-aos="fade-up">
+            <div class="progress">
+              <span class="skill">Python Programmierung <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
                 </div>
               </div>
-              <!-- end of container -->
-            </section>
-            <!-- end of information -->
+            </div>
+
+            <div class="progress">
+              <span class="skill">Umgang mit Linux <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Umgang mit VS-CODE und Jetbrains-IDEs <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
           </div>
-          <div
-            class="tab-pane fade"
-            id="page2"
-            role="tabpanel"
-            aria-labelledby="page2-tab"
-          >
-            <h2>Page 2 Content</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat, sed diam voluptua. At vero eos et accusam et justo duo
-              dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-              sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
-              amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-              invidunt ut labore et dolore magna aliquyam erat, sed diam
-              voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-              Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
-              dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing
-              elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
-              magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
-              justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-              takimata sanctus est Lorem ipsum dolor sit amet. Duis autem vel
-              eum iriure dolor in hendrerit in vulputate velit esse molestie
-              consequat, vel illum dolore eu feugiat nulla facilisis at vero
-              eros et accumsan et iusto odio dignissim qui blandit praesent
-              luptatum zzril delenit augue duis dolore te feugait nulla
-              facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing
-              elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-              magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
-              nostrud exerci tation ullamcorper suscipit lobortis nisl ut
-              aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor
-              in hendrerit in vulputate velit esse molestie consequat, vel illum
-              dolore eu feugiat nulla facilisis at vero eros et accumsan et
-              iusto odio dignissim qui blandit praesent luptatum zzril delenit
-              augue duis dolore te feugait nulla facilisi. Nam liber tempor cum
-              soluta nobis eleifend option congue nihil imperdiet doming id quod
-              mazim placerat facer possim assum. Lorem ipsum dolor sit amet,
-              consectetuer adipiscing elit, sed diam nonummy nibh euismod
-              tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi
-              enim ad minim veniam, quis nostrud exerci tation ullamcorper
-              suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis
-              autem vel eum iriure dolor in hendrerit in vulputate velit esse
-              molestie consequat, vel illum dolore eu feugiat nulla facilisis.
-              At vero eos et accusam et justo duo dolores et ea rebum. Stet
-              clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
-              dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing
-              elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
-              magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
-              justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-              takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor
-              sit amet, consetetur sadipscing elitr, At accusam aliquyam diam
-              diam dolore dolores duo eirmod eos erat, et nonumy sed tempor et
-              et invidunt justo labore Stet clita ea et gubergren, kasd magna no
-              rebum. sanctus sea sed takimata ut vero voluptua. est Lorem ipsum
-              dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing
-              elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
-              magna aliquyam erat. Consetetur sadipscing elitr, sed diam nonumy
-              eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-              sed diam voluptua. At vero eos et accusam et justo duo dolores et
-              ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
-              Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
-              sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-              et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-              accusam et justo duo dolores et ea rebum. Stet clita kasd
-              gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat, sed diam voluptua. At vero eos et accusam et justo duo
-              dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-              sanctus. Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-              sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
-              aliquyam erat, sed diam voluptua. At vero eos et accusam et justo
-              duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-              takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor
-              sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-              tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-              voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-              Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
-              dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing
-              elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
-              magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
-              justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-              takimata sanctus est Lorem ipsum dolor sit amet. Duis autem vel
-              eum iriure dolor in hendrerit in vulputate velit esse molestie
-              consequat, vel illum dolore eu feugiat nulla facilisis at vero
-              eros et accumsan et iusto odio dignissim qui blandit praesent
-              luptatum zzril delenit augue duis dolore te feugait nulla
-              facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing
-              elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-              magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
-              nostrud exerci tation ullamcorper suscipit lobortis nisl ut
-              aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor
-              in hendrerit in vulputate velit esse molestie consequat, vel illum
-              dolore eu feugiat nulla facilisis at vero eros et accumsan et
-              iusto odio dignissim qui blandit praesent luptatum zzril delenit
-              augue duis dolore te feugait nulla facilisi. Nam liber tempor cum
-              soluta nobis eleifend option congue nihil imperdiet doming id quod
-              mazim placerat facer possim assum. Lorem ipsum dolor sit amet,
-              consectetuer adipiscing elit, sed diam nonummy nibh euismod
-              tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi
-              enim ad minim veniam, quis nostrud exerci tation ullamcorper
-              suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis
-              autem vel eum iriure dolor in hendrerit in vulputate velit esse
-              molestie consequat, vel illum dolore eu feugiat nulla facilisis.
-              At vero eos et accusam et justo duo dolores et ea rebum. Stet
-              clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
-              dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing
-              elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
-              magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
-              justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-              takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor
-              sit amet, consetetur sadipscing elitr, At accusam aliquyam diam
-              diam dolore dolores duo eirmod eos erat, et nonumy sed tempor et
-              et invidunt justo labore Stet clita ea et gubergren, kasd magna no
-              rebum. sanctus sea sed takimata ut vero voluptua. est Lorem ipsum
-              dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing
-              elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
-              magna aliquyam erat. Consetetur sadipscing elitr, sed diam nonumy
-              eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-              sed diam voluptua. At vero eos et accusam et justo duo dolores et
-              ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
-              Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
-              sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-              et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-              accusam et justo duo dolores et ea rebum. Stet clita kasd
-              gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat, sed diam voluptua. At vero eos et accusam et justo duo
-              dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-              sanctus. Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-              sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
-              aliquyam erat, sed diam voluptua. At vero eos et accusam et justo
-              duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-              takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor
-              sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-              tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-              voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-              Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
-              dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing
-              elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
-              magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
-              justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-              takimata sanctus est Lorem ipsum dolor sit amet. Duis autem vel
-              eum iriure dolor in hendrerit in vulputate velit esse molestie
-              consequat, vel illum dolore eu feugiat nulla facilisis at vero
-              eros et accumsan et iusto odio dignissim qui blandit praesent
-              luptatum zzril delenit augue duis dolore te feugait nulla
-              facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing
-              elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-              magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
-              nostrud exerci tation ullamcorper suscipit lobortis nisl ut
-              aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor
-              in hendrerit in vulputate velit esse molestie consequat, vel illum
-              dolore eu feugiat nulla facilisis at vero eros et accumsan et
-              iusto odio dignissim qui blandit praesent luptatum zzril delenit
-              augue duis dolore te feugait nulla facilisi. Nam liber tempor cum
-              soluta nobis eleifend option congue nihil imperdiet doming id quod
-              mazim placerat facer possim assum. Lorem ipsum dolor sit amet,
-              consectetuer adipiscing elit, sed diam nonummy nibh euismod
-              tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi
-              enim ad minim veniam, quis nostrud exerci tation ullamcorper
-              suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis
-              autem vel eum iriure dolor in hendrerit in vulputate velit esse
-              molestie consequat, vel illum dolore eu feugiat nulla facilisis.
-              At vero eos et accusam et justo duo dolores et ea rebum. Stet
-              clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
-              dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing
-              elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
-              magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
-              justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-              takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor
-              sit amet, consetetur sadipscing elitr, At accusam aliquyam diam
-              diam dolore dolores duo eirmod eos erat, et nonumy sed tempor et
-              et invidunt justo labore Stet clita ea et gubergren, kasd magna no
-              rebum. sanctus sea sed takimata ut vero voluptua. est Lorem ipsum
-              dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing
-              elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
-              magna aliquyam erat. Consetetur sadipscing elitr, sed diam nonumy
-              eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-              sed diam voluptua. At vero eos et accusam et justo duo dolores et
-              ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
-              Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
-              sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-              et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-              accusam et justo duo dolores et ea rebum. Stet clita kasd
-              gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat, sed diam voluptua. At vero eos et accusam et justo duo
-              dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-              sanctus. Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-              sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
-              aliquyam erat, sed diam voluptua. At vero
-            </p>
+        
+          <div class="col-lg-6" data-aos="fade-up">
+            <div class="progress">
+              <span class="skill">Iot Geräte Programmierung <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">C++ / C# Programmierung <i class="val">75%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Bash Programmierung <i class="val">70%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
           </div>
-          <!-- Weitere Tab-Inhalte hier hinzufügen -->
+
+          
+
+          
+
+          <!-- <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0"
+              aria-valuemax="100">
+              <div class="progress-bar bg-success" style="width: 25%">
+                25%
+              </div>
+            </div>
+            <div class="progress" role="progressbar" aria-label="Info example" aria-valuenow="50" aria-valuemin="0"
+              aria-valuemax="100">
+              <div class="progress-bar bg-info text-dark" style="width: 50%">
+                50%
+              </div>
+            </div>
+            <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0"
+              aria-valuemax="100">
+              <div class="progress-bar bg-warning text-dark" style="width: 75%">
+                75%
+              </div>
+            </div>
+            <div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0"
+              aria-valuemax="100">
+              <div class="progress-bar bg-danger" style="width: 100%">
+                Linux Server Administration 100%
+              </div>
+            </div>
+          </div> -->
+        </div>
+        <div class="section-title">
+          <p>
+            In meinen Projekten arbeite ich auch mit SQL Datenbanken
+          </p>
         </div>
       </div>
-    </main>
+    </section>
+    <!-- End Skills Section -->
+    
 
-    <footer class="footer mt-auto py-3 bg-body-tertiary">
+    <!-- About Hardware Section -->
+    <section id="about" class="about section-bg">
       <div class="container">
-        <span class="text-body-secondary">Ramsbrock.Net Timo Ramsbrock</span>
-      </div>
-    </footer>
+        <div class="section-title">
+          <h2>Meine Hardware</h2>
+        </div>
 
-    <script src="./js/bootstrap.bundle.min.js"></script>
-  </body>
+        <div class="row">
+          <div class="col-lg-4" data-aos="fade-right">
+            <img src="assets/img/mypc.png" class="img-fluid" alt="" />
+          </div>
+          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <h3>Ryzen CPU, Nvidia GPU &amp; Open Suse Linux OS</h3>
+            <p class="fst-italic">Hardware:</p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li>
+                    <i class="bi bi-chevron-right"></i> <strong>CPU:</strong>
+                    <span>Ryzen 5 2600</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i> <strong>GPU:</strong>
+                    <span>Nvidia Geforce GTX 1050ti</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i> <strong>RAM:</strong>
+                    <span>Gskill*1</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <strong>NVMe:</strong> <span>Samsung 980 Pro 1tb</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <strong>Maus:</strong>
+                    <span>Logitech G502 Lightspeed</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <strong>Tastatur:</strong>
+                    <span>Corsair K57 Wireless</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <strong>Motherboard:</strong>
+                    <span>Asus ROG Strix x470-i</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <strong>Netzteil:</strong> <span>Bequiet*1</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <strong>Wasserkühlung:</strong> <span>Thermaltake*1</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <strong>Gehäuse:</strong> <span>Thermaltake*1</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <strong>Lautsprecher:</strong>
+                    <span>x2 Sonos Play 5 Gen 1</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <strong>Microphone:</strong>
+                    <span>Hyperx Quadcast S</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <p>*1 Fehlende informationen werden noch ergänzt.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End About Hardware Section -->
+
+    <!-- 3D Print Section -->
+    <section id="about" class="about section-bg">
+      <div class="container">
+        <div class="section-title">
+          <h2>Meine 3D Druck Equipment</h2>
+          <p>Text...</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4" data-aos="fade-right">
+            <img src="assets/img/3dprinter.png" class="img-fluid" alt="" />
+          </div>
+          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <h3>Creality Ender-3 S1 &amp; Geeetech I3 pro c</h3>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <p class="fst-italic">Creality Ender-3 S1:</p>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <strong>Firmware:</strong>
+                    <span>Pro. FW. von mriscoc</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <strong>Steuerungssoftware:</strong>
+                    <span>Rpi3 OctoPi*1</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <strong>Slicer:</strong> <span>PrusaSlicer</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <strong>Haupt Filament:</strong> <span>Geeetech Pla</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <strong>Modifikation:</strong> <span>Soon...*2</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <p class="fst-italic">Geeetech I3 pro c:</p>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <strong>Firmware:</strong> <span>Marlin 2.1.x</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <strong>Steuerungssoftware:</strong>
+                    <span>Rpi3 Octopi</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <strong>Slicer:</strong> <span>Cura</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <strong>Haupt Filament:</strong> <span>Geeetech Pla</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <strong>Modifikation:</strong>
+                    <span>3D Print broken Extruder part</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <p>Das sind die 3D Drucker die ich besitze und nutze.</p>
+            <p>*1 Werde ich bald auf Mainsail umstellen.</p>
+            <p>*2 Werde ich nach dem Umbau auf Mainsail ergänzen.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End About 3D Print Section -->
+
+    <!-- About Server Hardware Section -->
+    <section id="about" class="about section-bg">
+      <div class="container">
+        <div class="section-title">
+          <h2>Meine Server Hardware</h2>
+          <p>Kleines Home Netzwerk</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4" data-aos="fade-right">
+            <img src="assets/img/server.png" class="img-fluid" alt="" />
+          </div>
+          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <h3>DELL r620, Trunas Scale OS &amp; Synology Ds212</h3>
+            <p class="fst-italic">Dell r620 Hardware:</p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li>
+                    <i class="bi bi-chevron-right"></i> <strong>CPU:</strong>
+                    <span>x2 Xeon</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i> <strong>RAM:</strong>
+                    <span>32GB</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <strong>HDDs:</strong> <span>x6 600GB </span>
+                  </li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <strong>System-SSD:</strong> <span>IDK</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <strong>Raid-Module:</strong>
+                    <span>x710mini it mode</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <strong>Netzteil:</strong> <span>x2 750w</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i> <strong>IDK:</strong>
+                    <span>IDK</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i> <strong>IDK:</strong>
+                    <span>IDK</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <p>Dazu kommt noch die Diskstation von Synology und ein Switch.</p>
+            <p>Die Verbindung zum Internet erfolgt über eine Fritzbox 7590, die mit einem externen LTE-Modem verbunden ist.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End About Server Hardware Section -->
+
+    <!-- Discord Section -->
+    <section id="cta" class="cta">
+      <div class="container" data-aos="zoom-in">
+        <div class="row">
+          <div class="col-lg-9 text-center text-lg-start">
+            <h3>Discord</h3>
+            <p>Mein Discord Server.</p>
+          </div>
+          <div class="col-lg-3 cta-btn-container text-center">
+            <a class="cta-btn align-middle" href="https://discord.com/invite/pA4GQA5">Join Server</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Discord Section -->
+
+    <!-- projekte Section -->
+    <section id="projekte" class="projekte section-bg">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Projekte - Derzeit in Arbeit</h2>
+          <p>Projekte Galerie! - Derzeit in Arbeit</p>
+        </div>
+      </div>
+    </section>
+    <!-- End projekte Section -->
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq section-bg">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Frequently Asked Questions</h2>
+          <p>Häufig Gestellte Fragen</p>
+        </div>
+
+        <div class="faq-list">
+          <ul>
+            <li data-aos="fade-up" data-aos-delay="100">
+              <i class="bx bx-help-circle icon-help"></i>
+              <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">Wie können wir in kontakt
+                kommen?
+                <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
+                <p>
+                  Sie können mich über E-Mail oder die Sozialen Netzwerke wie Discord
+                  erreichen, mehr auf der Kontakt Seite.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="200">
+              <i class="bx bx-help-circle icon-help"></i>
+              <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">n/a <i
+                  class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
+                <p>n/a</p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="300">
+              <i class="bx bx-help-circle icon-help"></i>
+              <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">n/a <i
+                  class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
+                <p>n/a</p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="400">
+              <i class="bx bx-help-circle icon-help"></i>
+              <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" class="collapsed">n/a <i
+                  class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
+                <p>n/a</p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="500">
+              <i class="bx bx-help-circle icon-help"></i>
+              <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed">n/a <i
+                  class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
+                <p>n/a</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- End Faq Section -->
+  </main>
+  <!-- End #main -->
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>Ramsbrock.NET</h3>
+            <p>
+              <br />
+              <br />
+              <br /><br />
+              <strong>Discord:</strong> timorams<br />
+              <strong>Email:</strong> timo@ramsbrock.net<br />
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Navigation</h4>
+            <ul>
+              <li>
+                <i class="bx bx-chevron-right"></i> <a href="#">Home</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Soon</h4>
+            <ul>
+              <li>
+                <i class="bx bx-chevron-right"></i> <a href="#">soon</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>My Social Networks</h4>
+            <p>.</p>
+            <div class="social-links mt-3">
+              <a href="https://twitter.com/TimoRams" class="twitter"><i class="bx bxl-twitter"></i></a>
+              <a href="https://discord.com/invite/pA4GQA5" class="discord"><i class="bx bxl-discord"></i></a>
+              <a href="https://www.instagram.com/timorams/" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="https://www.youtube.com/channel/UCT-Ag_P_5x_Z8bTESx7WMPA" class="youtube"><i class="bx bxl-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom clearfix">
+      <div class="copyright">Webseite von Timo Ramsbrock! Erstellt mit der Hilfe von Github-Copilot und GPT-4, Bei Fehlern bitte melden :]</div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+
+  <!-- Main JS Files -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/color-modes.js"></script>
+</body>
+
 </html>
