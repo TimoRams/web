@@ -1,6 +1,7 @@
 :root {
   --primary: #1c262f;
   --primary-light: #212d37;
+  --primary-section: #222222;
   --secondary: #ff00ff;
   --tertiary: #ff9900;
   --gradient: linear-gradient(to right, #ff00ff, #ff9900);
@@ -913,12 +914,12 @@ h6 {
 --------------------------------------------------------------*/
 #footer {
   font-size: 14px;
-  background: #1c262f;
+  background-color: var(--primary-section);
 }
 
 #footer .footer-top {
   padding: 60px 0 30px 0;
-  background: #fff;
+  background-color: var(--primary-section);
 }
 
 #footer .footer-top .footer-contact {
@@ -932,7 +933,7 @@ h6 {
   line-height: 1;
   text-transform: uppercase;
   font-weight: 600;
-  color: #1c262f;
+  color: var(--light);
 }
 
 #footer .footer-top .footer-contact p {
@@ -946,7 +947,7 @@ h6 {
 #footer .footer-top h4 {
   font-size: 16px;
   font-weight: bold;
-  color: #1c262f;
+  color: var(--light);
   position: relative;
   padding-bottom: 12px;
 }
@@ -1014,7 +1015,7 @@ h6 {
 #footer .footer-bottom {
   padding-top: 30px;
   padding-bottom: 30px;
-  color: #fff;
+  background-color: var(--primary-section);
 }
 
 #footer .copyright {
