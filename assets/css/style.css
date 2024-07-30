@@ -265,7 +265,7 @@ section {
   transition: 0.9s;
   background-color: var(--secondary);
 }
-
+/*                New preloader start                     */
 #preloader {
   position: fixed;
   top: 0;
@@ -274,39 +274,70 @@ section {
   bottom: 0;
   z-index: 9999;
   overflow: hidden;
-  background: #1c262f;
+  background: var(--primary-section);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 1s ease, visibility 1s ease;
 }
 
-#preloader:before {
-  content: "";
-  position: fixed;
-  top: calc(50% - 30px);
-  left: calc(50% - 30px);
-  border: 6px solid #1c262f;
-  border-top-color: #fff;
-  border-bottom-color: #fff;
+#preloader.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+#preloader .container {
+  width: 20vw; /* Verkleinerte Breite */
+  aspect-ratio: 1 / 1;
+  position: relative;
+  perspective: 2000px;
+  transform-style: preserve-3d;
+  animation: box 7s infinite linear;
+}
+
+#preloader .ring {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  border: 0.75vw solid var(--secondary); /* Dünnere Ringe */
   border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  animation: animate-preloader 1s linear infinite;
+  border-bottom-color: transparent;
+  border-left-width: 0;
+  animation: spin 1s infinite linear;
 }
 
-@keyframes animate-preloader {
-  0% {
-    transform: rotate(0deg);
-    border-color: #1c262f;
-  }
+#preloader .ring1 {
+  --r: rotateY(0);
+  transform: translate(-50%, -50%) rotateZ(0deg);
+}
 
-  50% {
-    transform: rotate(180deg);
-    border-color: #ff00ff;
-  }
+#preloader .ring2 {
+  --r: rotateY(-85deg);
+  transform: translate(-50%, -50%) var(--r);
+  animation-delay: calc(1s * .75);
+}
 
-  100% {
-    transform: rotate(360deg);
-    border-color: #1c262f;
+#preloader .ring3 {
+  --r: rotateX(-85deg);
+  transform: translate(-50%, -50%) rotateX(-95deg);
+  animation-delay: calc(1s * .5);
+}
+
+@keyframes spin {
+  to {
+    transform: translate(-50%, -50%) var(--r) rotateZ(360deg);
   }
 }
+
+@keyframes box {
+  to {
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+}
+/*                New preloader end                     */
 
 body {
   font-family: "Open Sans", sans-serif;
