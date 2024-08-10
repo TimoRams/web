@@ -30,6 +30,8 @@
 
 <body>
 
+  <div id="particles-js"></div>
+
   <!-- Header -->
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
@@ -647,6 +649,14 @@
   <!-- Main JS Files -->
   <script src="assets/js/main.js"></script>
   <script src="assets/js/color-modes.js"></script>
+
+  <!-- Particles.js -->
+  <script src="assets/js/particles.min.js"></script>
+  <script>
+    particlesJS.load('particles-js', 'assets/js/particles-config.json', function() {
+      console.log('particles.js loaded - callback');
+    });
+  </script>
 
   <script>
         // Geburtsdatum festlegen
